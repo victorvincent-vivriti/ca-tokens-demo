@@ -1,0 +1,29 @@
+@import 'assets/scss/_variables.scss';
+
+body {
+    margin: 0;
+    background: #e8eaed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.ca-app-bar {
+    min-height: $ca-banner-background-size;
+    background: $ca-banner-background-color;
+    color: $ca-banner-text-color;
+    font-weight: 500;
+    font-size: $ca-banner-text-size;
+    line-height: $ca-banner-background-size;
+}
+
+.ca-app-bar > span {
+    padding-left: $ca-banner-background-size;
+}

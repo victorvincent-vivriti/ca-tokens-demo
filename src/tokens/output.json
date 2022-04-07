@@ -1,0 +1,60 @@
+{
+  "document": {
+    "fg": {
+      "color": {
+        "value": "#000000",
+        "type": "color"
+      }
+    },
+    "bg": {
+      "color": {
+        "value": "#edf2f7",
+        "type": "color"
+      }
+    },
+    "text": {
+      "color": {
+        "value": "#000000",
+        "type": "color"
+      }
+    },
+    "text-muted": {
+      "color": {
+        "value": "#2C394B",
+        "type": "color"
+      }
+    },
+    "bg-muted": {
+      "color": {
+        "value": "#ffffff",
+        "type": "color"
+      }
+    },
+    "active-text": {
+      "color": {
+        "value": "#000000",
+        "type": "color"
+      }
+    },
+    "appbar": {
+      "color": {
+        "value": "#4c51bf",
+        "type": "color"
+      }
+    }
+  },
+  "button": {
+    "primary": {
+      "color": {
+        "value": "#2f855a",
+        "type": "color"
+      }
+    },
+    "secondary": {
+      "color": {
+        "value": "#f6ad55",
+        "type": "color"
+      }
+    }
+  }
+}

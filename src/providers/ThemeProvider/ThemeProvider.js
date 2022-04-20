@@ -22,7 +22,6 @@ const ThemeProvider = ({ children, theme }) => {
 
     useEffect(() => {
         if (theme) {
-            console.log("Setting Theme Name", themeMap.get(theme), theme);
             setThemeURL(themeMap.get(theme));
         }
     }, [theme]);
@@ -58,8 +57,6 @@ const ThemeProvider = ({ children, theme }) => {
         },
         [theme]
     );
-
-    console.log({ themeName });
 
     if (isInitialLoad) return <p>Loading....</p>;
 

@@ -6,8 +6,6 @@ import { ThemeContext } from "../providers/ThemeProvider/ThemeProvider";
 const CAAppBar = ({ children, ...props }) => {
     const { theme, setTheme } = useContext(ThemeContext);
 
-    console.log(theme);
-
     const onThemeChange = useCallback(
         (themeName = null) => {
             if (themeName) {

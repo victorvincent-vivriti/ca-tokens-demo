@@ -1,4 +1,68 @@
 {
+  "fg": {
+    "default": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "muted": {
+      "value": "#2C394B",
+      "type": "color"
+    },
+    "suble": {
+      "value": "#a0aec0",
+      "type": "color"
+    }
+  },
+  "bg": {
+    "default": {
+      "value": "#edf2f7",
+      "type": "color"
+    },
+    "muted": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "suble": {
+      "value": "#edf2f7",
+      "type": "color"
+    }
+  },
+  "accent": {
+    "default": {
+      "value": "#44337a",
+      "type": "color"
+    }
+  },
+  "shadows": {
+    "default": {
+      "value": "#2C394B",
+      "type": "color"
+    }
+  },
+  "primary": {
+    "default": {
+      "value": "#ed8936",
+      "type": "color"
+    }
+  },
+  "secondary": {
+    "default": {
+      "value": "#718096",
+      "type": "color"
+    }
+  },
+  "action": {
+    "active": {
+      "background": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "text": {
+        "value": "#000000",
+        "type": "color"
+      }
+    }
+  },
   "document": {
     "fg": {
       "color": {
@@ -16,6 +80,12 @@
       "color": {
         "value": "#000000",
         "type": "color"
+      },
+      "h3": {
+        "size": {
+          "value": "18px",
+          "type": "sizing"
+        }
       }
     },
     "text-muted": {
@@ -38,22 +108,36 @@
     },
     "appbar": {
       "color": {
-        "value": "#4c51bf",
+        "value": "#44337a",
         "type": "color"
       }
     }
   },
   "button": {
-    "primary": {
+    "secondary": {
       "color": {
-        "value": "#2f855a",
+        "value": "#718096",
         "type": "color"
       }
     },
-    "secondary": {
+    "primary": {
       "color": {
-        "value": "#f6ad55",
+        "value": "#ed8936",
         "type": "color"
+      }
+    },
+    "active": {
+      "background": {
+        "color": {
+          "value": "#ffffff",
+          "type": "color"
+        }
+      },
+      "text": {
+        "color": {
+          "value": "#000000",
+          "type": "color"
+        }
       }
     }
   }

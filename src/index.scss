@@ -3,17 +3,17 @@
 body {
     margin: 0;
     // background: #e8eaed;
-    background: $document-bg-color;
+    background: var(--document-bg-color);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
         "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    color: $document-text-color;
+    color: var(--document-text-color);
 
     .text-muted {
-        color: $document-text-muted-color;
+        color: var(--document-text-muted-color);
     }
 }
 
@@ -25,7 +25,7 @@ code {
 .ca-app-bar {
     padding: 24px 48px;
     min-height: 39px;
-    background: $document-appbar-color;
+    background: var(--document-appbar-color);
     color: #fff;
     font-weight: 500;
     font-size: 18px;
@@ -48,7 +48,7 @@ code {
     padding: 24px 48px;
 
     .card-title {
-        font-size: 20px;
+        font-size: var(--document-text-h3-size);
         font-weight: 500;
     }
 
@@ -57,7 +57,7 @@ code {
         padding: 24px;
         border: 1px solid #eee;
         border-radius: 9px;
-        background: $document-bg-muted-color;
+        background: var(--document-bg-muted-color);
         align-items: center;
         justify-content: space-evenly;
 
@@ -97,7 +97,8 @@ code {
             }
 
             .pill-item.active {
-                background: #fff;
+                background: $button-active-background-color;
+                color: $button-active-text-color;
                 border: 1px solid #eee;
             }
         }
@@ -111,7 +112,7 @@ code {
                 display: flex;
                 min-width: 375px;
                 flex-direction: column;
-                background: $document-bg-muted-color;
+                background: var(--document-bg-muted-color);
                 padding: 24px;
                 margin-right: 12px;
                 border-radius: 12px;
@@ -123,7 +124,7 @@ code {
                 h5 {
                     margin: 0;
                     padding-bottom: 4px;
-                    font-size: 16px;
+                    font-size: var(--document-text-h3-size);
                 }
 
                 .bond-pills {
@@ -175,15 +176,15 @@ code {
                 }
 
                 button.ca-btn.btn-bid {
-                    background: $button-primary-color !important;
+                    background: var(--button-primary-color) !important;
                     color: #eee;
-                    border-color: $button-primary-color !important;
+                    border-color: var(--button-primary-color) !important;
                 }
 
                 button.ca-btn.btn-trade {
-                    background: $button-secondary-color !important;
+                    background: var(--button-secondary-color) !important;
                     color: #fff;
-                    border-color: $button-secondary-color !important;
+                    border-color: var(--button-secondary-color) !important;
                 }
             }            
         }

@@ -16,7 +16,9 @@ const ThemeContext = React.createContext(null);
 const ThemeProvider = ({ children, theme }) => {
     const [themeName, setThemeName] = useState(theme);
     const [themeURL, setThemeURL] = useState(themeMap.get(theme));
-    const [isThemeLoading, setIsThemeLoading] = useState(true);
+
+    const [isInitialLoad, setIsInitialLoad] = useState(true);
+    const [isThemeLoading, setIsThemeLoading] = useState(false);
 
     useEffect(() => {
         if (theme) {
@@ -27,14 +29,17 @@ const ThemeProvider = ({ children, theme }) => {
 
     useEffect(() => {
         if (themeURL) {
+            if (!isInitialLoad) setIsThemeLoading(true);
             getTheme(themeURL);
         }
-    }, [themeURL]);
+    }, [themeURL, isInitialLoad]);
 
     const setSassVariables = (tokens) => {
         Object.keys(tokens)?.map((key) =>
             document.documentElement.style.setProperty(key, tokens?.[key])
         );
+
+        setIsInitialLoad(false);
         setIsThemeLoading(false);
     };
 
@@ -56,11 +61,13 @@ const ThemeProvider = ({ children, theme }) => {
 
     console.log({ themeName });
 
-    if (isThemeLoading) return <p>Loading....</p>;
+    if (isInitialLoad) return <p>Loading....</p>;
 
     return (
         <>
-            <ThemeContext.Provider value={{ theme: themeName, setTheme }}>
+            <ThemeContext.Provider
+                value={{ theme: themeName, isThemeLoading, setTheme }}
+            >
                 {children}
             </ThemeContext.Provider>
         </>

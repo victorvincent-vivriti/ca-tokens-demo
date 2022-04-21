@@ -1,4 +1,4 @@
-# Getting Started with Design Tokens..
+# Getting Started with Design Tokens
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -97,8 +97,8 @@ code {
             }
 
             .pill-item.active {
-                background: $button-active-background-color;
-                color: $button-active-text-color;
+                background: var(--button-active-background-color);
+                color: var(--button-active-text-color);
                 border: 1px solid #eee;
             }
         }
